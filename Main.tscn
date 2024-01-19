@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://bn6yvqbknv74s"]
+
+[ext_resource type="PackedScene" uid="uid://doxyfingadm56" path="res://untitled.tscn" id="1_jvfd3"]
+[ext_resource type="Script" path="res://Main.gd" id="1_vkycc"]
+
+[node name="Main" type="Node3D"]
+script = ExtResource("1_vkycc")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.41353, -0.109422, -0.448961)
+size = Vector3(25.8841, 0.144043, 24.1518)
+
+[node name="Camera3D" type="Camera3D" parent="CSGBox3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.400104, 3.40972)
+
+[node name="untitled" parent="CSGBox3D/Camera3D" instance=ExtResource("1_jvfd3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.48622, -2.90572)

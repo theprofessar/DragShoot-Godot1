@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://cck4qiyurnht0"]
+
+[ext_resource type="Script" path="res://Node2D.gd" id="1_3rrmw"]
+[ext_resource type="Texture2D" uid="uid://cd2po1p0r47db" path="res://Untitled design.png" id="2_qidvi"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_dffsm"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_00jlu"]
+radius = 417.091
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(233.512, 322.125)
+scale = Vector2(0.124928, 0.112622)
+texture = ExtResource("2_qidvi")
+script = ExtResource("1_3rrmw")
+
+[node name="RigidBody2D" type="RigidBody2D" parent="Sprite2D"]
+disable_mode = 2
+physics_material_override = SubResource("PhysicsMaterial_dffsm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/RigidBody2D"]
+position = Vector2(-84.1444, -116.54)
+shape = SubResource("CircleShape2D_00jlu")

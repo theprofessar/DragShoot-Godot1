@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://df0kbejsni342"]
+
+[ext_resource type="PackedScene" uid="uid://b5g3r3n7802q2" path="res://cube_broken.glb" id="1_wwpwi"]
+
+[node name="cube_broken" instance=ExtResource("1_wwpwi")]
